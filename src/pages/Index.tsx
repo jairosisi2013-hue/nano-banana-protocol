@@ -1,15 +1,19 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import MatchSection from "@/components/MatchSection";
+import FirstStepSection from "@/components/FirstStepSection";
+import GrowthSection from "@/components/GrowthSection";
 import ProtocolSection from "@/components/ProtocolSection";
-import RoadmapSection from "@/components/RoadmapSection";
 import Footer from "@/components/Footer";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <HeroSection />
+    <MatchSection />
+    <FirstStepSection />
+    <GrowthSection />
     <ProtocolSection />
-    <RoadmapSection />
     <Footer />
   </div>
 );

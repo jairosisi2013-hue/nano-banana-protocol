@@ -1,29 +1,29 @@
-import { Terminal, GitBranch, Shield, Cpu } from "lucide-react";
+import { Heart, Brain, Shield, BarChart3 } from "lucide-react";
 
 const protocols = [
   {
-    icon: Terminal,
-    title: "Node.js Runtime Analysis",
-    description: "Evaluación en tiempo real del dominio de Node.js: event loop, streams, módulos nativos y patrones async/await avanzados.",
-    tags: ["Event Loop", "Streams", "Workers"],
+    icon: Heart,
+    title: "Compatibilidad Cultural",
+    description: "Analizamos los valores, la comunicación y el ambiente de trabajo de cada empresa para asegurar que encajes desde el primer día.",
+    tags: ["Valores", "Ambiente", "Comunicación"],
   },
   {
-    icon: GitBranch,
-    title: "Git Workflow Mastery",
-    description: "Análisis profundo del flujo Git: estrategias de branching, resolución de conflictos, rebases interactivos y hooks personalizados.",
-    tags: ["Branching", "CI/CD", "Hooks"],
+    icon: Brain,
+    title: "Mapeo de Potencial",
+    description: "Evaluamos habilidades técnicas y blandas, capacidad de aprendizaje y adaptabilidad — mucho más allá del CV tradicional.",
+    tags: ["Soft Skills", "Aprendizaje", "Adaptabilidad"],
   },
   {
     icon: Shield,
-    title: "Validación de Seguridad",
-    description: "Verificación de prácticas de seguridad: gestión de dependencias, secrets management y protección contra vulnerabilidades comunes.",
-    tags: ["Deps Audit", "Secrets", "OWASP"],
+    title: "Match Verificado",
+    description: "Cada conexión pasa por validación cruzada: verificamos que tanto candidato como empresa cumplan las expectativas mutuamente.",
+    tags: ["Verificación", "Confianza", "Transparencia"],
   },
   {
-    icon: Cpu,
-    title: "Performance Profiling",
-    description: "Medición de capacidad para optimizar: profiling de memoria, CPU bottlenecks y estrategias de caching inteligente.",
-    tags: ["Memory", "CPU", "Caching"],
+    icon: BarChart3,
+    title: "Análisis Predictivo",
+    description: "Predecimos la satisfacción a largo plazo del match usando datos de miles de relaciones laborales exitosas.",
+    tags: ["Predicción", "Data", "Retención"],
   },
 ];
 
@@ -31,20 +31,18 @@ const ProtocolSection = () => {
   return (
     <section className="py-24 relative" id="protocol">
       <div className="container mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-sm text-primary tracking-widest uppercase font-medium">Protocolo de Validación</span>
+          <span className="text-sm text-primary tracking-widest uppercase font-medium">Nano Banana Protocol</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-foreground">
-            Validación inteligente para{" "}
-            <span className="text-primary text-glow">Node.js & Git</span>
+            El motor de{" "}
+            <span className="text-primary text-glow">Empatía Digital</span>
           </h2>
           <div className="neon-line max-w-xs mx-auto" />
           <p className="max-w-2xl mx-auto text-muted-foreground mt-6 text-lg">
-            Nuestro protocolo analiza habilidades técnicas reales mediante desafíos prácticos y análisis de comportamiento en código.
+            Analizamos miles de datos para asegurar que la cultura de la empresa y los sueños del trabajador encajen al 100%.
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {protocols.map((p, i) => (
             <div
